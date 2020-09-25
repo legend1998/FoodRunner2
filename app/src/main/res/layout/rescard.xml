@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_height="100dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        android:id="@+id/rescard"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/res_image"
+            android:layout_width="80dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/roundbackground" />
+
+        <TextView
+            android:id="@+id/res_name"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/res_image"
+            android:text="resname"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/res_price"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/res_name"
+            android:layout_margin="10dp"
+            android:layout_toEndOf="@id/res_image"
+            android:text="200/person" />
+
+        <ImageView
+            android:id="@+id/fav_res"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="32dp"
+            android:src="@drawable/ic_fav_res_border_pink_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fav_res"
+            android:id="@+id/res_rating"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="32dp"
+            android:text="4.1" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="5dp"
+    app:cardCornerRadius="10dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginBottom="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/history_menu_serial"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:text="1."
+            android:textAlignment="center"
+            android:textColor="@color/primary_text" />
+
+        <TextView
+            android:id="@+id/history_menu_name"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="menu_name"
+            android:textColor="@color/primary_text"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/history_menu_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="price"
+            android:textColor="@color/secondary_text" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

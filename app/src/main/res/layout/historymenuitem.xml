@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/history_res_name"
+        android:text="Pind Tadka"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:textAlignment="textEnd"
+        android:id="@+id/history_res_cost"
+        android:text="Pind Tadka"
+        android:layout_toRightOf="@id/history_res_name"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="order at"
+        android:id="@+id/history_order_at"
+        android:layout_margin="10dp"
+        android:textAlignment="textEnd"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@id/history_res_cost"
+        android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_below="@id/history_order_at"
+        android:layout_margin="5dp"
+        android:id="@+id/history_item_recycler"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

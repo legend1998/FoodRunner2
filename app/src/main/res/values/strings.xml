@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">FoodRunner2</string>
+    <string name="close_drawer">close drawer</string>
+    <string name="open_drawer">open drawer</string>
+    <string name="loggedIn">LoggedIn</string>
+    <string name="sharedPreference">sharedPreference</string>
+    <string name="remove">remove</string>
+    <string name="add">Add</string>
+    <string name="already_a_member_login">already a member? login.</string>
+    <string name="register">Register</string>
+    <string name="address">Address</string>
+    <string name="password">password</string>
+    <string name="mobile_nol">Mobile nol.</string>
+    <string name="email">email</string>
+    <string name="name">name</string>
+    <string name="user">user</string>
+
+</resources>

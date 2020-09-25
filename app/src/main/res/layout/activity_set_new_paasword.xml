@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".activity.SetNewPaasword">
+    <TextView
+        android:layout_width="match_parent"
+        android:text="enter the otp received below"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="otp"
+        android:inputType="number"
+        android:id="@+id/otp"
+        android:layout_margin="10dp"
+        android:layout_height="50dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="new password"
+        android:inputType="textPassword"
+        android:layout_margin="10dp"
+        android:id="@+id/new_password"
+        android:layout_height="50dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:hint=" confirm password"
+        android:inputType="textPassword"
+        android:id="@+id/confirm_password"
+        android:layout_margin="10dp"
+        android:layout_height="50dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:id="@+id/set_new_password_button"
+        android:text="submit"
+        android:background="@drawable/roundedbackground"
+        android:layout_height="50dp"/>
+
+
+</LinearLayout>
