@@ -58,7 +58,7 @@ class LoginActivity : AppCompatActivity() {
         }
 
         loginButton.setOnClickListener {
-            if (phone.text.length < 10) phone.setError("enter valid email")
+            if (phone.text.length < 10) phone.setError("enter valid phone number")
             else if (password.text.length < 8) password.setError("enter valid password")
             else {
                 loginUser()
@@ -119,6 +119,7 @@ class LoginActivity : AppCompatActivity() {
 
                 }, Response.ErrorListener {
                     //this is Error listener.....
+                    print(it);
                 }) {
                     override fun getHeaders(): MutableMap<String, String> {
                         val header = HashMap<String, String>()
@@ -126,10 +127,13 @@ class LoginActivity : AppCompatActivity() {
                         header["content-type"] = "application/json"
                         return header
                     }
+
                 }
+                queue.add(jsonObjectRequest);
                 }catch (e:Exception){
                 println(e)
             }
+
         }else{
             val dialog = android.app.AlertDialog.Builder(this)
             dialog.setMessage("Internet is not connected!")
